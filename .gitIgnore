@@ -49,3 +49,4 @@ build/
 # Vite-specific
 # ---------------------
 .cache/
+frontend/
