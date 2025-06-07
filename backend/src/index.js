@@ -2,7 +2,7 @@ import express from 'express'
 import cors from "cors"
 import dotenv from 'dotenv'
 // import User from './models/user.model.js'
-import router from './routes/authRoute.js'
+import authRouter from './routes/authRoute.js'
 
 
 import dbConnect from './db/db.js'
@@ -17,7 +17,7 @@ app.use(cors())
 app.use(express.json())
 
 
-app.use('/auth',router)
+app.use('/auth',authRouter)
 
 app.get('/api/test',(req,res)=>{
     console.log("first")
