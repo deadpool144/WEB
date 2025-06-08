@@ -9,10 +9,15 @@ const userSchema =new mongoose.Schema({
         type:String,
         required:true
     },
+    role: {
+        type: String,
+        enum: ['user', 'admin'],
+        default: 'user',
+  },
     email:{
         type:String,
-        require:true,
-        uniqued:true
+        required:true,
+        unique:true
     },
     mob_no:{
         type:Number,
@@ -20,7 +25,7 @@ const userSchema =new mongoose.Schema({
     },
     password:{
         type:String,
-        requird:true
+        required:true
     },
      createdAt: {
     type: Date,
