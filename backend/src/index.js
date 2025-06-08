@@ -22,10 +22,10 @@ app.use('/auth',authRouter)
 app.get('/api/test',(req,res)=>{
     console.log("first")
 })
-app.post('/signup',(req,res)=>{
-    console.log(req.body)
-    // const newUser= new User({})
-})
+// app.post('/signup',(req,res)=>{
+//     console.log(req.body)
+//     // const newUser= new User({})
+// })
 
 
 app.listen(5000,()=>{
