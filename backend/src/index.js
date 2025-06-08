@@ -13,7 +13,13 @@ dotenv.config()
 const PORT=process.env.PORT || 5000
 const PASS=process.env.MONGODB_PASS
 const app= express()
-app.use(cors())
+app.use(cors(   //add 8-6-25
+    {
+        origin: '*', // Adjust this to your frontend URL
+        methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
+        credentials: true, // Allow credentials (cookies, authorization headers, etc.)
+    }
+))
 app.use(express.json())
 
 
