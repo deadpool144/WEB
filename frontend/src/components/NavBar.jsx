@@ -14,10 +14,12 @@ function NavBar() {
     >
       <NavLink to='/' className={({isActive})=>` p-1 ${isActive?'text-yellow-100':'text-black'}`}>Home</NavLink>
       <NavLink to='/explore' className={({isActive})=>` p-1 ${isActive?'text-yellow-100':'text-black'}`}>Explore</NavLink>
+      <NavLink to='/products' className={({isActive})=>` p-1 ${isActive?'text-yellow-100':'text-black'}`}>Products</NavLink>
       <NavLink to='/aboutus' className={({isActive})=>` p-1 ${isActive?'text-yellow-100':'text-black'}`}>AboutUs</NavLink>
       <NavLink to='/contact' className={({isActive})=>` p-1 ${isActive?'text-yellow-100':'text-black'}`}>Contact</NavLink>
       <NavLink to='/login' className={({isActive})=>` p-1 ${isActive?'text-yellow-100':'text-black'}`}>Login</NavLink>
       <NavLink to='/signup' className={({isActive})=>` p-1 ${isActive?'text-yellow-100':'text-black'}`}>SignUp</NavLink>
+
     </div>
   )
 }

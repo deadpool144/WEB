@@ -10,6 +10,7 @@ import Explore from './pages/Explore'
 import AboutUs from './pages/AboutUs'
 import Login from './pages/Login'
 import SignUp from './pages/SignUp'
+import Product from './pages/product.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -36,6 +37,9 @@ function App() {
         />
          <Route
         path='/signup' element={<SignUp/>}
+        />
+        <Route
+        path='/products' element={<Product/>}
         />
 
       </Routes>

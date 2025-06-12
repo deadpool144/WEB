@@ -1,5 +1,8 @@
 import React from 'react';
-import ProductCard from '../components/productCard.jsx';
+import ProductCard from '../components/productCard';
+
+
+
 
 const products = [
   {
@@ -54,7 +57,7 @@ const products = [
 
 
 
-function Explore() {
+function product() {
   return (
     <div className="p-6">
       <h1 className="text-2xl font-bold mb-4">Explore Products</h1>
@@ -67,4 +70,4 @@ function Explore() {
   );
 }
 
-export default Explore;
+export default product
