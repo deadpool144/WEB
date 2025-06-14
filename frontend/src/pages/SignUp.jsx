@@ -26,7 +26,7 @@ function SignUp() {
          ? '/api'
         : import.meta.env.VITE_API_URL;
 
-        constres=await axios.post(`${API_BASE_URL}/api/auth/signup`, form);
+        const res=await axios.post(`${API_BASE_URL}/api/auth/signup`, form);
       console.log(res)
     }
     catch(error){
