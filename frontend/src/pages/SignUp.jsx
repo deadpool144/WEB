@@ -21,7 +21,8 @@ function SignUp() {
     console.log("SignUp Data:", form);
     alert("Signup submitted!");
     try{
-      const re= await axios.post('http://localhost:5000/auth/signup',form)
+      const re= await axios.post('/api/auth/signup',form)
+      console.log(re)
     }
     catch(error){
       console.error(error)
