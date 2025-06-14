@@ -8,7 +8,7 @@ export default defineConfig({
       '/api': {
         target: 'https://web-ofah.onrender.com',
         changeOrigin: true,
-        secure: false,
+
       },
     },
   },

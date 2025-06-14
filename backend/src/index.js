@@ -22,8 +22,10 @@ app.use(cors(   //add 8-6-25
 ))
 app.use(express.json())
 
-
-app.use('/auth',authRouter)
+app.get('/',(req,res)=>{
+    res.send("Welcome to the backend")
+})
+app.use('/api/auth',authRouter)
 
 app.get('/api/test',(req,res)=>{
     console.log("first")
@@ -35,6 +37,6 @@ app.get('/api/test',(req,res)=>{
 
 
 app.listen(5000,()=>{
-    console.log(`server started at: http://localhost:${5000}`)
+    console.log(`server started at: http://localhost:${PORT}`)
 })
 dbConnect(PASS)
