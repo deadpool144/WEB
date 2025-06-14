@@ -21,8 +21,13 @@ function SignUp() {
     console.log("SignUp Data:", form);
     alert("Signup submitted!");
     try{
-      const re= await axios.post('/api/auth/signup',form)
-      console.log(re)
+        const API_BASE_URL =
+        import.meta.env.MODE === 'development'
+         ? '/api'
+        : import.meta.env.VITE_API_URL;
+
+        constres=await axios.post(`${API_BASE_URL}/api/auth/signup`, form);
+      console.log(res)
     }
     catch(error){
       console.error(error)
